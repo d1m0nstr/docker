@@ -1,6 +1,6 @@
-FROM python:3.9-alpine
+FROM python:3.11.5-alpine
 
-RUN pip install Flask==1.1.2
+RUN pip install Flask==1.1.2 && apt install vim
 
 ADD https://raw.githubusercontent.com/adterskov/geekbrains-conteinerization/master/homework/2.docker/python/app.py .
 
