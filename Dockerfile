@@ -1,8 +1,8 @@
-FROM python:3.11.5-alpine
+FROM python:3.11.5-bookworm
 
-RUN pip install Flask==1.1.2 && apt install vim
+RUN pip install Flask
 
-ADD https://raw.githubusercontent.com/adterskov/geekbrains-conteinerization/master/homework/2.docker/python/app.py .
+COPY https://raw.githubusercontent.com/adterskov/geekbrains-conteinerization/master/homework/2.docker/python/app.py .
 
 EXPOSE 8080
 
